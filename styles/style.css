@@ -1,0 +1,265 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor-de-fundo: #20262E;
+    --cor-textos: #20262E;
+    --cor-de-cards: #fff;
+
+    --font-default: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding: 2em 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: var(--cor-de-fundo);
+    gap: 1em;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main__section__principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    font-family: var(--font-default);
+    min-width: 100vw;
+}
+
+.main__section__principal__h1 {
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--cor-de-cards);
+}
+
+.main__section__calendario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vw;
+}
+
+.main__section__calendario__card {
+    width: 50vw;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.main__section__calendario__card header {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+header .calendario__icones {
+    display: flex;
+}
+
+header .calendario__icones span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+header .calendario__icones span:hover {
+    color: var(--cor-textos);
+}
+
+.calendario__icones span:last-child {
+    margin-right: -10px;
+}
+
+header .calendario__icones span:hover {
+    background: #f2f2f2;
+}
+
+header .calendario__data_atual {
+    font-size: 2.50rem;
+    font-weight: 500;
+    color: var(--cor-textos);
+}
+
+.calendario__datas {
+    padding: 1em;
+}
+
+.calendario__datas ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendario__datas .dias {
+    margin-bottom: 20px;
+}
+
+.calendario__datas li {
+    color: var(--cor-textos);
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendario__datas .semanas li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendario__datas .dias li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2.5em;
+}
+
+/* inactive */
+
+.dias li.inactive {
+    color: #aaa;
+}
+
+/* tem-programacao */
+
+.dias li.tem-programacao {
+    color: var(--cor-de-fundo);
+}
+
+.dias li.tem-programacao::before {
+    border-style: dotted;
+    border-color: var(--cor-de-fundo);
+}
+
+.dias li.tem-programacao:hover {
+    color: var(--cor-de-cards);
+}
+
+.dias li.tem-programacao:hover::before {
+    background: var(--cor-de-fundo);
+}
+
+/* active */
+
+.dias li.active {
+    color: var(--cor-de-cards);
+}
+
+.dias li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dias li.active::before {
+    background: var(--cor-de-fundo);
+    color: var(--cor-textos);
+}
+
+/**/
+
+.dias li:not(.active, .tem-programacao):hover::before {
+    background: #f2f2f2;
+}
+
+.main__section__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100vw;
+    gap: 2em;
+}
+
+
+.main__section__cards__card {
+    width: 50vw;
+    min-height: 5vh;
+    background: var(--cor-de-cards);
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5em;
+    gap: 1em;
+}
+
+.main__section__cards__card__titulo {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.main__section__cards__card__ul {
+    list-style-type: disc;
+    margin-left: 2.5em;
+}
+
+.main__section__cards__card__ul__li strong {
+    font-weight: bold;
+}
+
+.main__section__cards__card__p {
+    font-style: italic;
+}
+
+/**/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    gap: 0.5em;
+}
+
+.footer__p {
+    font-family: var(--font-default);
+    font-weight: 300;
+    color: var(--cor-de-cards);
+}
+
+.footer__a {
+    font-family: var(--font-default);
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--cor-de-cards);
+}
