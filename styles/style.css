@@ -263,3 +263,93 @@ header .calendario__data_atual {
     text-decoration: none;
     color: var(--cor-de-cards);
 }
+
+/**/
+@media (min-width: 1200px) and (max-width: 1400px){
+    .main__section__principal__h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px){
+    .main__section__principal__h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px){
+    .main__section__principal__h1 {
+        font-size: 3em;
+    }    
+}
+
+
+@media (min-width: 500px) and (max-width: 699px){
+    .main__section__principal__h1 {
+        font-size: 2.5em;
+    }
+
+	.main__section__calendario__card {
+        width: 70vw
+    }
+
+    .main__section__cards__card {
+        width: 70vw
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 499px){
+    .main__section__principal__h1 {
+        font-size: 2em;
+    }
+
+    .main__section__calendario__card {
+        width: 80vw;
+    }
+
+    .main__section__cards__card {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px){
+    .main__section__principal__h1 {
+        font-size: 1.5em;
+    }
+
+    .main__section__calendario__card {
+        width: 90vw;
+    }
+
+    .main__section__cards__card {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 299px){
+    .main__section__principal__h1 {
+        font-size: 1em;
+    }
+
+    .main__section__calendario__card {
+        width: 90vw;
+    }
+
+    .main__section__cards__card {
+        width: 90vw;
+    }
+
+    header .calendario__data_atual {
+        font-size: 1.50rem;
+    }
+
+    .calendario__datas {
+        padding: 0.5em;
+        font-size: 0.5em;
+    }
+
+    .calendario__datas li{
+        font-size: 1.5em;
+    }
+}
