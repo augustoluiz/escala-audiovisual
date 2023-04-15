@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escala Audiovisual</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./js/script.js" defer></script>
 </head>
+
 <body>
     <header></header>
-    <main>
-        <h1>Escala Audiovisual (Mar - Jun)</h1>
+    <main class="main">
+        <section class="main__section__principal">
+            <h1 class="main__section__principal__h1">Escala Audiovisual</h1>
+        </section>
+        <!--  -->
+        <section class="main__section__calendario">
+            <div class="main__section__calendario__card">
+                <header>
+                    <p class="calendario__data_atual"></p>
+                    <div class="calendario__icones">
+                        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                        <span id="next" class="material-symbols-rounded">chevron_right</span>
+                    </div>
+                </header>
+                <div class="calendario__datas">
+                    <ul class="semanas">
+                        <li>Dom</li>
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sáb</li>
+                    </ul>
+                    <ul class="dias"></ul>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="main__section__cards">
+            <div class="main__section__cards__card">
+                <h1 class="main__section__cards__card__titulo">EBD</h1>
+                <ul class="main__section__cards__card__ul">
+                    <li class="main__section__cards__card__ul__li"><strong>Multimídia: </strong>Augusto</li>
+                    <li class="main__section__cards__card__ul__li"><strong>Live: </strong>Augusto</li>
+                </ul>
+                <p class="main__section__cards__card__p">Obs: Horário de início -> 09:30</p>
+            </div>
+            <div class="main__section__cards__card">
+                <h1 class="main__section__cards__card__titulo">CULTO</h1>
+                <ul class="main__section__cards__card__ul">
+                    <li class="main__section__cards__card__ul__li"><strong>Multimídia: </strong>Augusto</li>
+                    <li class="main__section__cards__card__ul__li"><strong>Live: </strong>Augusto</li>
+                </ul>
+                <p class="main__section__cards__card__p">Obs: Horário de início -> 18:00</p>
+            </div>
+        </section>
     </main>
-    <footer>teste</footer>
+    <footer class="footer">
+        <p class="footer__p">Created by</p>
+        <a class="footer__a" href="https://github.com/augustoluiz" target="_blank">@augustoluiz</a>
+    </footer>
 </body>
+
 </html>
