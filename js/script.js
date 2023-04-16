@@ -4,7 +4,7 @@ const prevNextIcon = document.querySelectorAll(".calendario__icones span");
 const cards_programacao = document.querySelector(".main__section__cards");
 
 const dadosEscala = (callback) => {
-    fetch('../data/data.json')
+    fetch('../js/data/data.json')
     .then((response) => response.json())
     .then((json) => callback(json));
 }
