@@ -4,7 +4,7 @@ const prevNextIcon = document.querySelectorAll(".calendario__icones span");
 const cards_programacao = document.querySelector(".main__section__cards");
 
 const dadosEscala = (callback) => {
-    fetch('../js/data/data.json')
+    fetch('https://augustoluiz.github.io/escala-audiovisual/data/data.json')
     .then((response) => response.json())
     .then((json) => callback(json));
 }
