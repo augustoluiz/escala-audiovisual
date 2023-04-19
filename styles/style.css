@@ -42,7 +42,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 0.5em;
+    gap: 1em;
     font-family: var(--font-default);
     min-width: 100vw;
 }
@@ -51,6 +51,27 @@ body {
     font-weight: 600;
     font-size: 4em;
     color: var(--cor-de-cards);
+}
+
+.main__section__principal__a {
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 7em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-de-cards);
+    border: 1em solid var(--cor-de-cards);
+    border: 0.15em solid var(--cor-de-cards);
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.main__section__principal__a:hover {
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-de-cards);
 }
 
 .main__section__calendario {
@@ -269,6 +290,11 @@ header .calendario__data_atual {
     .main__section__principal__h1 {
         font-size: 3.5em;
     }
+
+    .main__section__principal__a {
+        font-size: 1.4em;
+        width: 6.5em;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1199px){
@@ -281,12 +307,21 @@ header .calendario__data_atual {
     .main__section__principal__h1 {
         font-size: 3em;
     }    
+
+    .main__section__principal__a {
+        font-size: 1.3em;
+        width: 7em;
+    }
 }
 
 
 @media (min-width: 500px) and (max-width: 699px){
     .main__section__principal__h1 {
         font-size: 2.5em;
+    }
+
+    .main__section__principal__a {
+        font-size: 1.2em;
     }
 
 	.main__section__calendario__card {
@@ -304,6 +339,11 @@ header .calendario__data_atual {
         font-size: 2em;
     }
 
+    .main__section__principal__a {
+        font-size: 1.1em;
+        width: 7em;
+    }
+
     .main__section__calendario__card {
         width: 80vw;
     }
@@ -318,6 +358,14 @@ header .calendario__data_atual {
         font-size: 1.5em;
     }
 
+    .main__section__principal__a {
+        width: 7em;
+    }
+
+    .main__section__principal__a {
+        font-size: 1em;
+    }
+
     .main__section__calendario__card {
         width: 90vw;
     }
@@ -330,6 +378,11 @@ header .calendario__data_atual {
 @media (min-width: 200px) and (max-width: 299px){
     .main__section__principal__h1 {
         font-size: 1em;
+    }
+
+    .main__section__principal__a {
+        font-size: 0.8em;
+        width: 7em;
     }
 
     .main__section__calendario__card {
