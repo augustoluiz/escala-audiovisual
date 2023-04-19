@@ -33,7 +33,7 @@ function renderCalendar(escala){
         liTag += `<li class="inactive">${ultimaDataDoUltimoMes - i + 1}</li>`;
     }
     for (let i = 1; i <= ultimaDataDoMes; i++) {
-        let dataAtualFormatada = `${ano}-${String(mes+1).padStart(2, '0')}-${String(data.getDate()).padStart(2, '0')}`
+        let dataAtualFormatada = `${ano}-${String(new Date().getMonth()+1).padStart(2, '0')}-${String(data.getDate()).padStart(2, '0')}`
         let dataFormatada = `${ano}-${String(mes+1).padStart(2, '0')}-${String(i).padStart(2, '0')}`
         let liId = `li_${dataFormatada}`
 
